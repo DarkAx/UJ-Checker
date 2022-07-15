@@ -1,73 +1,56 @@
-# UJ Checker                                               أداة بايثون لطلاب جامعة جدة
+# أداة بايثون لطلاب جامعة جدة | UJ Checker
+### تقوم الأداة بالتحقق من أي تغيير يطرأ على صفحة "الإستعلام الأكاديمي الشامل" للطالب في موقع نظام الأودس وإرسال رسالة على بريده الإلكتروني إذا حدث هذا التغيير لإشعاره بذلك, مما يوفر عليه وقت دخول الموقع والتأكد من نزول الدرجات أو جدول المحاضرات إلخ..
 
-### - تقوم الأداة بالتحقق من أي تغيير يطرأ على صفحة "الإستعلام الأكاديمي الشامل" للطالب في موقع نظام الأودس وإرسال رسالة على بريده الإلكتروني إذا حدث هذا التغيير لإشعاره بذلك, مما يوفر عليه وقت دخول الموقع والتأكد من نزول الدرجات أو جدول المحاضرات إلخ..
+### يمكنك تشغيل الأداة في كل مرة تفتح فيها جهازك وتركها تعمل أو بكل بساطة يمكنك جعلها تعمل 'بالخلفية' في كل مرة تشغل فيها جهازك, مما يوفر عليك الجهد, وسيتقدم شرح الطريقة وهي بسيطة.
 
-### - The tool checks for any change that occurs to the student's "Comprehensive Academic Inquiry" page in the ODUS system website and then sends a message if change occus to his email to notify him that there has been a change; which saves him the time of entering the site and making sure that the grades, the schedule of lectures or etc.. are down.
+### الشرح  التالي سيكون باللغة الإنجليزية.
 
-### كيف يحدث هذا التحقق؟
-
-
-### عن طريق إنشاء ملف في جهاز المستخدم بإسم `cont.txt` للمرة الأولى حيث يتم كتابة ال ``Content-length`` للصفحة بداخل الملف حتى تتم مقارنته في المرات القادمة بال "Content-length" للصفحة, فإذا ظهر أن نتيجة المقارنة ليست متساوية يتم إرسال بريد إلكتروني للمستخدم 
-
-### How this check occur?
-
-### By creating a file on the user’s PC with the name `cont.txt` for the first time, where the ``Content-length`` of the page is written inside it so that it will be compared in next attempts with the “Content-length” of the page. If it appears that the comparison result is not equal, an email is sent to the user.
-
-
-
-
-
-### These are the variables that must get changed by you :
+### These are the variables that should get changed by you :
 `ID , pwd_odus , sender , pwd_email , reciever`
+### - Your University ID - Password for ODUS - Sender email (SHOULD BE OUTLOOK OTHERWISE IT WONT WORK), Password for email, Reciever email.
+### You can put the sender email same as the reciever one.
 
-#### You can put the sender email same as the reciever one.
+## Install
 
-## Installing and setting up
+### You should first download Python 3 if you don't have it, then you can install this tool by cloning or downloading the zip.
 
-### You must download Python 3 in your PC
-
-#### then you can install the tool by cloning or downloading the zip.
-
-### After you install the script, if it was a zip file then extract it. then go to `cmd (Command prompt)` and write `cd C:\path\to\thetoolfolder` 
-### then write `pip install -r requirements.txt`
+### After you install the script, if it was a zip file then extract it. then go to `cmd (Command prompt)` and write `pip install requests`
+#### ^ This is a Python module which is required to run the script.
 
 ![173392174-fb911311-1f07-49a7-9cd4-60ae9f35d06d](https://user-images.githubusercontent.com/107263975/179049731-b5e4d74d-7dc7-4589-a29d-b1b358213b48.jpg)
 
-###  Install is done.
-
-#### First time you execute the program in ``any text editor for code`` :
+### Now put your credentials in the first lines of the script in each variable ``ID``, ``pwd_odus``, ``sender``, ``pwd_email``, ``reciever``
+### First time you execute the program in ``any text editor for code`` :
 
 ![173366188-09fe893a-19a7-428f-9b25-de734f79e95e](https://user-images.githubusercontent.com/107263975/179048972-0930a1ef-c61e-4199-b5bf-3069350fc9d1.jpg)
 
-
-#### If no updates to the page yet:
+### If no updates to the page yet:
 
 ![173366212-806fc704-11c9-4d90-ae5a-58072919e238](https://user-images.githubusercontent.com/107263975/179048984-10878409-4dff-4fce-9242-9315701c13d7.jpg)
 
-#### If there was a new update to the page:
+### If there was a new update to the page:
 
 ![173366749-8d602135-abaa-4812-9d67-c88de854a1f0](https://user-images.githubusercontent.com/107263975/179049021-86f30466-e837-408e-9350-f2130909929f.jpg)
 
 
-### As you can see, the program will be partially useless and boring if you need to run it by yourself everytime you turn on your PC, so what can we do then?
+## Tool in startup
 
-### Continue reading.
+### You can see that the program will be partially useless and boring if you need to run it manually everytime you turn on your PC, so what can we do then?
 
-## Placing the script in Startup
+### To let the script run by itself everytime you turn on your PC background; then we will put it in ``Startup apps``, follow these steps carefully :
 
-### So to let the script run by itself everytime you turn on your PC, follow these steps "carefully".
-
-#### Press ``⊞ Windows key + R`` , and write ``shell:startup`` then press OK
+### Press ``Windows key + R`` , and write ``shell:startup`` then press ``OK``
 
 ![173373747-40a8b407-9cef-433c-ae56-d1465005e61f](https://user-images.githubusercontent.com/107263975/179049054-76a8e5e3-7b8c-45b3-b531-4bc141282a1f.jpg)
 
-### You will be transferred to Startup Apps folder, so right click anywhere inside the folder and go to New then click on Shortcut
+### You will be transferred to ``Startup apps folder``, so ``right click`` anywhere inside the folder and go to ``New`` then click on ``Shortcut``
 
 ![173373811-6ec15a5d-f3cc-48e5-9bc6-7f285b6651f1](https://user-images.githubusercontent.com/107263975/179049072-352ef025-b152-4ec2-982e-48055c54c76e.jpg)
 
-### To let the script run everytime you turn on the computer + not only running but also running in the "background" so there is nothing visual to you neither an open tab, write:
+### Now write the full path to the script: 
 
-### ``pythonw C:\path\to\thescript.py``
+### ``pythonw C:\path\to\UJ.py`` 
+#### ^ This is an example, you should put your own path.
 
 ![173373820-b71729dc-0b6a-4d64-b76a-346d4ed3037b](https://user-images.githubusercontent.com/107263975/179049089-0a43a166-034c-4646-9704-6f84cd90caae.jpg)
 
@@ -82,14 +65,10 @@
 
 ![173410167-c3df70f0-330f-4c01-a122-c5e0d0daf056](https://user-images.githubusercontent.com/107263975/179050820-2520cc74-3042-47dd-9bdc-b20a4906bb19.png)
 
-### You can check if the script is working in the background by going to ``cmd (Command prompt)`` and writing ``tasklist``
-
-![173374178-788d52e2-f668-4a3b-b52d-6cb99caf5326](https://user-images.githubusercontent.com/107263975/179049285-548b2925-97da-44ac-8a1b-caac05d3b24b.jpg)
-
 
 ## Important notes
 
-### Your sender email MUST be outlook
+### Your sender email should be outlook ``@outlook.com`` or ``@uj.edu.sa`` or any other outlook
 
 ### Do not edit the `cont.txt` as you might break this script. ( It is a file that gets created to save the old `Content-Length` of the page to compare it to the new one)
 
@@ -108,4 +87,4 @@
 
 
 ### There is a possibility that this tool get more updates.
-الحمد لله.
+# الحمد لله.
