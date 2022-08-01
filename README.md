@@ -23,18 +23,23 @@
 ### After you install the script, if it was a zip file then extract it. then go to `cmd (Command prompt)` and write `pip install requests`
 #### ^ This is a Python module which is required to run the script.
 
-![173392174-fb911311-1f07-49a7-9cd4-60ae9f35d06d](https://user-images.githubusercontent.com/107263975/179049731-b5e4d74d-7dc7-4589-a29d-b1b358213b48.jpg)
+![anything](https://user-images.githubusercontent.com/107263975/182051519-13a550a4-e613-4fe4-8b69-8716c9710dce.png)
+
+
 
 ### Now put your credentials in the first lines of the script in each variable ``ID``, ``pwd_odus``, ``sender``, ``pwd_email``, ``reciever``
 ### First time you execute the program in ``any text editor for code`` :
 
 ![173366188-09fe893a-19a7-428f-9b25-de734f79e95e](https://user-images.githubusercontent.com/107263975/179048972-0930a1ef-c61e-4199-b5bf-3069350fc9d1.jpg)
 
+
 ### If no updates to the page yet:
 
 ![173366212-806fc704-11c9-4d90-ae5a-58072919e238](https://user-images.githubusercontent.com/107263975/179048984-10878409-4dff-4fce-9242-9315701c13d7.jpg)
 
+
 ### If there was a new update to the page:
+
 
 ![173366749-8d602135-abaa-4812-9d67-c88de854a1f0](https://user-images.githubusercontent.com/107263975/179049021-86f30466-e837-408e-9350-f2130909929f.jpg)
 
