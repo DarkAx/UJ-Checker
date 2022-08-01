@@ -7,8 +7,14 @@
 
 ### These are the variables that should get changed by you :
 `ID , pwd_odus , sender , pwd_email , reciever`
-### - Your University ID - Password for ODUS - Sender email (SHOULD BE OUTLOOK OTHERWISE IT WONT WORK), Password for email, Reciever email.
-### You can put the sender email same as the reciever one.
+
+### - Your University ID `ID`
+### - Password for ODUS `pwd_odus`
+### - Sender email (SHOULD BE OUTLOOK OTHERWISE IT WONT WORK) `sender`
+### - Password for email `pwd_email`
+### - Reciever email. `reciever`
+
+### The sender email can be same as the reciever email.
 
 ## Install
 
