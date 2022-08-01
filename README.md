@@ -10,7 +10,7 @@
 
 ### - Your University ID `ID`
 ### - Password for ODUS `pwd_odus`
-### - Sender email (SHOULD BE OUTLOOK OTHERWISE IT WONT WORK) `sender`
+### - Sender email (GMAIL ACCOUNTS ARE NOT ACCEPTED "@gmail.com) `sender`
 ### - Password for email `pwd_email`
 ### - Reciever email. `reciever`
 
@@ -79,7 +79,7 @@
 
 ## Important notes
 
-### Your sender email should be outlook ``@outlook.com`` or ``@uj.edu.sa`` or any other outlook.
+### The script will not work if the sender was a gmail account (@gmail.com)
 
 ### ** Do not edit the "cont.txt".
 
