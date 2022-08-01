@@ -74,8 +74,9 @@
 
 ## Important notes
 
-### Your sender email should be outlook ``@outlook.com`` or ``@uj.edu.sa`` or any other outlook
-# ** Do not edit the "cont.txt"
+### Your sender email should be outlook ``@outlook.com`` or ``@uj.edu.sa`` or any other outlook.
+
+### ** Do not edit the "cont.txt".
 
 ### ** Remember that "cont.txt" gets created WHEREVER the script get executed.
 
@@ -87,5 +88,6 @@
 
 
 
+-------------------------------------------------------------------------------
 ### This tool might get updates continusly
 # الحمد لله.
