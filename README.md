@@ -75,22 +75,17 @@
 ## Important notes
 
 ### Your sender email should be outlook ``@outlook.com`` or ``@uj.edu.sa`` or any other outlook
+# ** Do not edit the "cont.txt"
 
-### Do not edit the `cont.txt` as you might break this script. ( It is a file that gets created to save the old `Content-Length` of the page to compare it to the new one)
+### ** Remember that "cont.txt" gets created WHEREVER the script get executed.
 
-### If you dont want this script anymore, don't forget to delete `"cont.txt"` :
+### If you dont want this script anymore, delete "cont.txt", you might find it in :
 
-#### You might find it in
+#### - C:\Windows\System32\cont.txt
 
-#### - ``C:\Windows\System32\cont.txt``
-
-#### - ``Python PATH``
-
-#### - Any directory you have executed the script in
-
-#### - Remember that `cont.txt` gets created WHEREVER the script get executed.
+#### - Python PATH
 
 
 
-### There is a possibility that this tool get more updates.
+### This tool might get updates continusly
 # الحمد لله.
